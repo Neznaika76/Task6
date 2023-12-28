@@ -93,7 +93,7 @@ int main()
 }
  */
 
-/* Задача 5 */
+/* Задача 5
 
 #include <stdio.h>
 
@@ -114,4 +114,25 @@ int main() {
     printf("\n");
     return 0;
 }
+*/
 /* Задача 6 */
+
+#include <stdio.h>
+int degree(int n, int p)
+{
+    if (p == 0)
+        return 1;
+    return n * degree(n, --p);
+}
+
+int main()
+{
+    int n, p;
+    printf("Введите число - ");
+    scanf("%d", &n);
+    printf("Введите степень числа - ");
+    scanf("%d", &p);
+    printf("%d", degree(n, p));
+    printf("\n");
+    return 0;
+}
