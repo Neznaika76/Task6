@@ -51,7 +51,7 @@ int main()
 }
 */
 
-/* Задача 3 */
+/* Задача 3
 
 #include <stdio.h>
 int sumBinDigits(int n)
@@ -69,5 +69,49 @@ int n;
     printf("\n");
     return 0;
 }
+*/
 
+/* Задача 4
 
+#include <stdio.h>
+void printNull(void)
+{
+int a;
+    scanf("%d", &a);
+    if (a == 0)
+        return;
+    if (a % 2 != 0)
+        printf("%d ", a);
+    printNull();
+}
+
+int main() 
+{
+    printNull();
+    printf("\n");
+    return 0;
+}
+ */
+
+/* Задача 5 */
+
+#include <stdio.h>
+
+int line()
+{
+char input;
+    scanf("%c", &input);
+    if (input == '.')
+        return 0;
+    else if (input == 'a')
+        return line() + 1;
+    else
+        return line();
+}
+
+int main() {
+    printf("%d", line());
+    printf("\n");
+    return 0;
+}
+/* Задача 6 */
