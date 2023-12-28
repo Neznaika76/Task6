@@ -25,7 +25,7 @@ int main()
 }
  */
 
-/* Задача 2 */
+/* Задача 2
 
 #include <stdio.h>
 void print_ab(int a, int b)
@@ -49,3 +49,25 @@ int main()
     printf("\n");
     return 0;
 }
+*/
+
+/* Задача 3 */
+
+#include <stdio.h>
+int sumBinDigits(int n)
+{
+    if (n / 2 == 0)
+        return n % 2;
+    return n % 2 + sumBinDigits(n / 2);
+}
+
+int main()
+{
+int n;
+    scanf("%d", &n);
+    printf("%d\n", sumBinDigits(n));
+    printf("\n");
+    return 0;
+}
+
+
